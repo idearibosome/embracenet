@@ -50,4 +50,4 @@ Please refer to the comments in ```embracenet/embracenet.py``` for more informat
 
 ## Example
 
-An example code that employs EmbraceNet to build a classifier of [[Fashion MNIST]](https://github.com/zalandoresearch/fashion-mnist) is included in the ```examples/fashion_mnist/``` folder.
+An example code that employs EmbraceNet to build a classifier of [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) is included in the ```examples/fashion_mnist/``` folder.
