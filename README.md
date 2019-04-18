@@ -26,7 +26,7 @@ This repository contains the official TensorFlow-based implementation of the Emb
 
 ## Getting started
 
-The EmbraceNet model is in the ```embracenet/``` folder.
+The implementation of the EmbraceNet model is in the ```embracenet/``` folder.
 Copy the folder to your code base and import it.
 ```python
 from embracenet import EmbraceNet
