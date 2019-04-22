@@ -6,7 +6,7 @@
 
 EmbraceNet is a novel multimodal integration architecture for deep learning models, which provides good compatibility with any network structure, in-depth consideration of correlations between different modalities, and seamless handling of missing data.
 This repository contains the official TensorFlow-based implementation of the EmbraceNet model, which is explained in the following paper.
-- J.-H. Choi, J.-S. Lee. EmbraceNet: A robust deep learning architecture for multimodal classification. Information Fusion, vol. 51, pp. 259-270, Nov. 2019 **[[Paper]](https://doi.org/10.1016/j.inffus.2019.02.010)**
+- J.-H. Choi, J.-S. Lee. EmbraceNet: A robust deep learning architecture for multimodal classification. Information Fusion, vol. 51, pp. 259-270, Nov. 2019 **[[Paper]](https://doi.org/10.1016/j.inffus.2019.02.010)** **[[arXiv]](https://arxiv.org/abs/1904.09078)**
 ```
 @article{choi2019embracenet,
   title={EmbraceNet: A robust deep learning architecture for multimodal classification},
