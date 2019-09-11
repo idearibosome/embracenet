@@ -2,6 +2,10 @@
 
 ![EmbraceNet](figures/embracenet_structure.png)
 
+## News
+
+- Our method "[EmbraceNet for Activity](https://dl.acm.org/citation.cfm?id=3344871)" won the 2nd place (1st in deep learning-based approaches) in the [SHL recognition challenge](http://www.shl-dataset.org/activity-recognition-challenge-2019/). **[[Paper]](https://dl.acm.org/citation.cfm?id=3344871)** **[[Challenge paper]](https://dl.acm.org/citation.cfm?id=3344872)**
+
 ## Introduction
 
 EmbraceNet is a novel multimodal integration architecture for deep learning models, which provides good compatibility with any network structure, in-depth consideration of correlations between different modalities, and seamless handling of missing data.
@@ -22,7 +26,7 @@ This repository contains the official TensorFlow-based implementation of the Emb
 ## Dependencies
 
 - Python 3.6+
-- TensorFlow 1.8+
+- TensorFlow 1.8+ (<2.0)
 
 ## Getting started
 
