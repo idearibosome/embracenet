@@ -4,7 +4,7 @@
 
 ## News
 
-- Our method "[EmbraceNet for Activity](https://dl.acm.org/citation.cfm?id=3344871)" won the 2nd place (1st in deep learning-based approaches) in the [SHL recognition challenge](http://www.shl-dataset.org/activity-recognition-challenge-2019/). **[[Paper]](https://dl.acm.org/citation.cfm?id=3344871)** **[[Challenge paper]](https://dl.acm.org/citation.cfm?id=3344872)**
+- Our method "[EmbraceNet for Activity](https://dl.acm.org/citation.cfm?id=3344871)" won the 2nd place (1st in deep learning-based approaches) in the [SHL recognition challenge 2019](http://www.shl-dataset.org/activity-recognition-challenge-2019/). **[[Paper]](https://dl.acm.org/citation.cfm?id=3344871)** **[[Challenge paper]](https://dl.acm.org/citation.cfm?id=3344872)**
 
 ## Introduction
 
