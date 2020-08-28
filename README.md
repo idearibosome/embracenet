@@ -29,7 +29,6 @@ This repository contains the official PyTorch- and TensorFlow-based implementati
 ## Dependencies
 
 ### PyTorch-based
-**Warning: PyTorch-based version is not tested much yet.**
 - Python 3.7+
 - PyTorch 1.5+
 
@@ -90,4 +89,4 @@ Please refer to the comments in ```embracenet_tf1/embracenet.py``` for more info
 
 ## Examples
 
-An example code that employs EmbraceNet to build a classifier of [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) is included in the ```examples/fashion_mnist_pytorch/``` and ```examples/fashion_mnist_tf1/``` folders.
+Example codes that employs EmbraceNet to build a classifier of [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) is included in the ```examples/fashion_mnist_pytorch/``` and ```examples/fashion_mnist_tf1/``` folders.
