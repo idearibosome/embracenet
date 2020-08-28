@@ -89,4 +89,4 @@ Please refer to the comments in ```embracenet_tf1/embracenet.py``` for more info
 
 ## Examples
 
-Example codes that employs EmbraceNet to build a classifier of [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) is included in the ```examples/fashion_mnist_pytorch/``` and ```examples/fashion_mnist_tf1/``` folders.
+Example codes that employ EmbraceNet to build classifiers of [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) are included in the ```examples/fashion_mnist_pytorch/``` and ```examples/fashion_mnist_tf1/``` folders.
