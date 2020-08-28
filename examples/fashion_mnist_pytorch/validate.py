@@ -30,13 +30,13 @@ def main():
   os.environ['CUDA_VISIBLE_DEVICES'] = args.cuda_device
 
   # data loader
-  print('prepare data loader - %s' % (args.dataloader))
+  print('prepare data loader')
   dataloader = BimodalMNISTLoader()
   dataloader_args, remaining_args = dataloader.parse_args(remaining_args)
   dataloader.prepare()
 
   # model
-  print('prepare model - %s' % (args.model))
+  print('prepare model')
   model = BimodalMNISTModel()
   model_args, remaining_args = model.parse_args(remaining_args)
   model.prepare(is_training=False, global_step=args.global_step)
