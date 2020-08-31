@@ -1,7 +1,7 @@
 # MNIST / Fashion MNIST example
 
-This folder contains example codes that employ PyTorch-based EmbraceNet on the Fashion MNIST dataset.
-As in the main paper, the code divides the original images into left and right halves having a size of `4 x 28 pixels and considers them as bimodal datasets.
+This folder contains example codes that employ a PyTorch-based EmbraceNet model on the Fashion MNIST dataset.
+As in the main paper, the code divides the original images into left and right halves having a size of 14 x 28 pixels and considers them as bimodal datasets.
 
 Place the Fashion MNIST data to the ```data/``` folder and run the code based on the following script snippets.
 
