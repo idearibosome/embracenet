@@ -2,16 +2,18 @@
 
 ![EmbraceNet](figures/embracenet_structure.png)
 
+
 ## News
 
 - We are developing the PyTorch-based EmbraceNet module. You may find the current development progress in the [```pytorch1``` branch](https://github.com/idearibosome/embracenet/tree/pytorch1).
 
 - Our method "[EmbraceNet for Activity](https://dl.acm.org/citation.cfm?id=3344871)" won the 2nd place (1st in deep learning-based approaches) in the [SHL recognition challenge 2019](http://www.shl-dataset.org/activity-recognition-challenge-2019/). **[[Paper]](https://dl.acm.org/citation.cfm?id=3344871)** **[[Challenge paper]](https://dl.acm.org/citation.cfm?id=3344872)**
 
+
 ## Introduction
 
 EmbraceNet is a novel multimodal integration architecture for deep learning models, which provides good compatibility with any network structure, in-depth consideration of correlations between different modalities, and seamless handling of missing data.
-This repository contains the official TensorFlow-based implementation of the EmbraceNet model, which is explained in the following paper.
+This repository contains the official PyTorch- and TensorFlow-based implementations of the EmbraceNet model, which is explained in the following paper.
 - J.-H. Choi, J.-S. Lee. EmbraceNet: A robust deep learning architecture for multimodal classification. Information Fusion, vol. 51, pp. 259-270, Nov. 2019 **[[Paper]](https://doi.org/10.1016/j.inffus.2019.02.010)** **[[arXiv]](https://arxiv.org/abs/1904.09078)**
 ```
 @article{choi2019embracenet,
@@ -25,19 +27,50 @@ This repository contains the official TensorFlow-based implementation of the Emb
 }
 ```
 
+
 ## Dependencies
 
+### PyTorch-based
+- Python 3.7+
+- PyTorch 1.5+
+
+### TensorFlow-based
 - Python 3.6+
 - TensorFlow 1.8+ (<2.0)
 
+
 ## Getting started
 
-The implementation of the EmbraceNet model is in the ```embracenet/``` folder.
-Copy the folder to your code base and import it.
+The implementations of the EmbraceNet model is in the [```embracenet_pytorch/```](embracenet_pytorch/) and [```embracenet_tf1/```](embracenet_tf1/) folders.
+Copy the appropriate folder for your framework to your code base and import it.
 ```python
-from embracenet import EmbraceNet
+# for PyTorch-based
+from embracenet_pytorch import EmbraceNet
+
+# for TensorFlow-based
+from embracenet_tf1 import EmbraceNet
 ```
 Here is a code snippet to employ EmbraceNet.
+
+### PyTorch-based
+```python
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
+# Build a pre-processing network for each modality.
+# Assume that there are two pre-processed modalities (modality1, modality2) having sizes of 512 and 128.
+
+# Create an EmbraceNet object.
+embracenet = EmbraceNet(device=device, input_size_list=[512, 128], embracement_size=256)
+
+# Feed the output of the pre-processing network to EmbraceNet at the "forward" function of your module.
+embraced_output = embracenet(input_list=[modality1, modality2]))
+
+# Employ a post-processing network with inputting embraced_output.
+```
+
+Please refer to the comments in [```embracenet_pytorch/embracenet.py```](embracenet_pytorch/embracenet.py) for more information.
+
+### TensorFlow-based
 ```python
 # Create an EmbraceNet object.
 embracenet = EmbraceNet(batch_size=16, embracement_size=256)
@@ -52,8 +85,10 @@ embraced_output = embracenet.embrace()
 
 # Build a post-processing network with inputting embraced_output.
 ```
-Please refer to the comments in ```embracenet/embracenet.py``` for more information.
 
-## Example
+Please refer to the comments in [```embracenet_tf1/embracenet.py```](embracenet_tf1/embracenet.py) for more information.
 
-An example code that employs EmbraceNet to build a classifier of [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) is included in the ```examples/fashion_mnist/``` folder.
+
+## Examples
+
+Example codes that employ EmbraceNet to build classifiers of [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) are included in the [```examples/fashion_mnist_pytorch/```](examples/fashion_mnist_pytorch/) and [```examples/fashion_mnist_tf1/```](examples/fashion_mnist_tf1/) folders.

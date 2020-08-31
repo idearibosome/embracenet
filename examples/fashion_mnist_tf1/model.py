@@ -2,7 +2,7 @@ import numpy as np
 import tensorflow as tf
 
 import context
-from embracenet import EmbraceNet
+from embracenet_tf1 import EmbraceNet
 
 class ModelConfig(object):
   pass
