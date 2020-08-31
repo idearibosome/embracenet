@@ -39,7 +39,7 @@ This repository contains the official PyTorch- and TensorFlow-based implementati
 
 ## Getting started
 
-The implementations of the EmbraceNet model is in the ```embracenet_pytorch/``` and ```embracenet_tf1/``` folders.
+The implementations of the EmbraceNet model is in the [```embracenet_pytorch/```](embracenet_pytorch/) and [```embracenet_tf1/```](embracenet_tf1/) folders.
 Copy the appropriate folder for your framework to your code base and import it.
 ```python
 # for PyTorch-based
@@ -66,7 +66,7 @@ embraced_output = embracenet(input_list=[modality1, modality2]))
 # Employ a post-processing network with inputting embraced_output.
 ```
 
-Please refer to the comments in ```embracenet_pytorch/embracenet.py``` for more information.
+Please refer to the comments in [```embracenet_pytorch/embracenet.py```](embracenet_pytorch/embracenet.py) for more information.
 
 ### TensorFlow-based
 ```python
@@ -84,9 +84,9 @@ embraced_output = embracenet.embrace()
 # Build a post-processing network with inputting embraced_output.
 ```
 
-Please refer to the comments in ```embracenet_tf1/embracenet.py``` for more information.
+Please refer to the comments in [```embracenet_tf1/embracenet.py```](embracenet_tf1/embracenet.py) for more information.
 
 
 ## Examples
 
-Example codes that employ EmbraceNet to build classifiers of [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) are included in the ```examples/fashion_mnist_pytorch/``` and ```examples/fashion_mnist_tf1/``` folders.
+Example codes that employ EmbraceNet to build classifiers of [Fashion MNIST](https://github.com/zalandoresearch/fashion-mnist) are included in the [```examples/fashion_mnist_pytorch/```](examples/fashion_mnist_pytorch/) and [```examples/fashion_mnist_tf1/```](examples/fashion_mnist_tf1/) folders.
