@@ -39,7 +39,7 @@ This repository contains the official PyTorch- and TensorFlow-based implementati
 
 ## Getting started
 
-The implementations of the EmbraceNet model is in the [```embracenet_pytorch/```](embracenet_pytorch/) and [```embracenet_tf1/```](embracenet_tf1/) folders.
+The implementations of the EmbraceNet model are in the [```embracenet_pytorch/```](embracenet_pytorch/) and [```embracenet_tf1/```](embracenet_tf1/) folders.
 Copy the appropriate folder for your framework to your code base and import it.
 ```python
 # for PyTorch-based
